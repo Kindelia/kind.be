@@ -11,7 +11,7 @@ const config = {
     "Kind2 is a pure functional, lazy, non-garbage-collected, general-purpose, dependently typed programming language focusing on performance and usability.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 

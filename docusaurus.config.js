@@ -60,7 +60,7 @@ const config = {
       navbar: {
         title: "Kind2",
         logo: {
-          alt: "My Site Logo",
+          alt: "Kind2 Logo",
           src: "img/logo.svg",
         },
         items: [
@@ -68,9 +68,16 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Docs",
+            label: "Documentation",
+          },
+          {
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "Tutorial",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Community", position: "left" },
           {
             label: "Install",
             position: "right",
@@ -81,7 +88,7 @@ const config = {
             position: 'right',
           },
           {
-            href: "https://github.com/kindela/kind2",
+            href: "https://github.com/kindelia/kind2",
             label: "GitHub",
             position: "right",
           },
@@ -94,7 +101,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Docs",
                 to: "/docs/intro",
               },
             ],

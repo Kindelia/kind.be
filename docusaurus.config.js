@@ -25,7 +25,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "es", "fr", "ja", "ko", "pt-br", "ru", "zh-Hans"],
   },
 
   presets: [
@@ -75,6 +75,10 @@ const config = {
             label: "Install",
             position: "right",
             href: "https://github.com/Kindelia/Kind2#installation",
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: "https://github.com/kindela/kind2",

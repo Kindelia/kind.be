@@ -79,11 +79,6 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/blog", label: "Community", position: "left" },
           {
-            label: "Install",
-            position: "right",
-            href: "https://github.com/Kindelia/Kind2#installation",
-          },
-          {
             type: 'localeDropdown',
             position: 'right',
           },
@@ -137,7 +132,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Kindelia Foundation, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Kindelia Foundation.`,
       },
       prism: {
         theme: lightCodeTheme,

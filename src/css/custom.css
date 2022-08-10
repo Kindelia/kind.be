@@ -22,7 +22,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #f7f3f0;
   --ifm-color-primary-dark: #e6dad0;
   --ifm-color-primary-darker: #decdc0;
@@ -35,4 +35,8 @@
 
 .footer--dark {
   background-color: #333333;
+}
+
+html[data-theme="light"] .navbar .navbar__logo {
+  content: url(../../static//img/logo-dark.svg);
 }

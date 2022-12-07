@@ -1,13 +1,13 @@
-import Head from 'next/head';
-import { useEffect, useState } from 'react';
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
-import { FirstChart } from '../components/FirstChart';
-import { KindBenchChart } from '../components/KindBenchChart';
-import { KindEfficiencyChart } from '../components/KindEfficiencyChart';
+import { FirstChart } from "../components/FirstChart";
+import { KindBenchChart } from "../components/KindBenchChart";
+import { KindEfficiencyChart } from "../components/KindEfficiencyChart";
 
-function KindMachine({ hasOpacity }) {
+function KindMachine() {
 	return (
-		<div className="flex flex:1 jc:space-between w:100% opacity:${hasOpacity ? 0.3 : 1}">
+		<div className="flex flex:1 jc:space-between w:100%">
 			<div className="flex flex:1 flex:col">
 				<h2 className='f:#6C5464 f:bold f:"Source Serif Pro" mt:16 f:34'>
 					What we do:
@@ -34,9 +34,9 @@ function KindMachine({ hasOpacity }) {
 	);
 }
 
-function KindProgrammingLanguage({ hasOpacity }) {
+function KindProgrammingLanguage() {
 	return (
-		<div className="flex flex:1 jc:space-between w:100% opacity:${hasOpacity ? 0.3 : 1}">
+		<div className="flex flex:1 jc:space-between w:100%">
 			<div className="flex flex:1 flex:col">
 				<h1 className='f:#6C5464 f:bold f:"Source Serif Pro" f:34'>2.</h1>
 				<h2 className='f:#6C5464 f:bold f:"Source Serif Pro" mt:20'>
@@ -63,9 +63,9 @@ function KindProgrammingLanguage({ hasOpacity }) {
 	);
 }
 
-function KindSharedComputer({ hasOpacity }) {
+function KindSharedComputer() {
 	return (
-		<div className="flex flex:1 jc:space-between w:100% opacity:${hasOpacity ? 0.3 : 1}">
+		<div className="flex flex:1 jc:space-between w:100%">
 			<div className="flex flex:1 flex:col">
 				<h1 className='f:#6C5464 f:bold f:"Source Serif Pro" f:34'>3.</h1>
 				<h2 className='f:#6C5464 f:bold f:"Source Serif Pro" mt:20'>
@@ -114,7 +114,7 @@ export default function Index() {
 			<div className="flex flex-1 flex:col gap:250">
 				<KindMachine />
 				<KindProgrammingLanguage />
-        <KindSharedComputer />
+				<KindSharedComputer />
 			</div>
 		</div>
 	);

@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
-export type FloatButtonProps = {};
-
-export function FloatButton(_: FloatButtonProps) {
+export function FloatButton() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -18,11 +16,11 @@ export function FloatButton(_: FloatButtonProps) {
   }, []);
 
   function goToScroll() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scroll({ top: 0, behavior: "smooth" });
   }
 
   if (scrollY < 100) {
-    return
+    return null
   }
 
   return (

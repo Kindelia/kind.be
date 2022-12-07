@@ -39,8 +39,22 @@ export function FirstChart() {
       </div>
       <LineChart width={400} height={340} data={data}>
         <CartesianGrid />
-        <XAxis axisLine={false} tick={false} dataKey="core" label="cores" />
-        <YAxis unit="s" fontFamily="Fira Code" fontSize={12} />
+        <XAxis
+          axisLine={false}
+          tick={true}
+          dataKey="core"
+          fontFamily="Fira Code"
+          fontSize={12}
+        />
+        <YAxis
+          axisLine={false}
+          tick={true}
+          fontFamily="Fira Code"
+          fontSize={12}
+          unit="s"
+          domain={[0, 80]}
+          ticks={[0, 10, 20, 30, 40, 50, 60, 70, 80]}
+        />
         <Tooltip />
         <Line
           name="haskell"
@@ -78,11 +92,11 @@ export function FirstChart() {
       <div className="flex flex:col gap:10 ml:80 mt:10">
         <div className="flex gap:10 ai:center">
           <div className="h:20 w:20 bg:#EF97E9" />
-          <p className="f:'Fira Code'">HVM Kind Machine</p>
+          <p className="f:'Fira Code' f:12">HVM Kind Machine</p>
         </div>
         <div className="flex gap:10 ai:center">
           <div className="h:20 w:20 bg:purple" />
-          <p className="f:'Fira Code'">
+          <p className="f:'Fira Code' f:12">
             Haskell Compiler (Used by
             <br /> Kaspersky, Oracle, Tesla and others)
           </p>
